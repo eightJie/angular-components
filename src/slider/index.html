@@ -1,0 +1,38 @@
+<div class="bk-slider" ng-mousedown="down($event)">
+<link rel="stylesheet" href="src/slider/index.css" />
+    <span class="bk-slider-range" >
+        <span ng-repeat="i in stepOptions" ng-style="i._width" class="bk-slider-block" ng-class="i.css">
+            <span class="bk-slider-block-box" ng-class="{'bk-slider-block-box-last':$last}">
+                <span class="bk-slider-txt" ng-bind="i.max"></span>
+            </span>
+        </span>
+
+        <span class="bk-slider-container" ng-style="curWidth" ng-class="{'bk-slider-transition':unmove}">
+            <span class="bk-slider-current">
+                <span class="bk-slider-unit" ng-repeat="i in stepOptions" ng-style="i._width">
+                    <span class="bk-slider-unit-box" ng-class="{'bk-slider-unit-box-last':$last}">
+                        <span class="bk-slider-txt" ng-bind="i.max"></span>
+                    </span>
+                </span>
+            </span>
+        </span>
+
+        <span class="bk-slider-disabled" ng-style="disabledWidth" ng-class="{'bk-slider-transition':unmove}"></span>
+
+        <span class="bk-slider-drag" ng-style="barLeft"  ng-class="{'bk-slider-transition':unmove}">
+            <i></i>
+            <i></i>
+            <div style="position: relative;">
+                <div class="bk-tip-gray" style="top: -38px;left: -15px;" ng-hide="unmove">
+                    <span>{{value}}</span>
+                    <span class="bk-tip-arrow"></span>
+                </div>
+            </div>
+        </span>
+    </span>
+</div>
+
+
+
+
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="ui.dream">
+<head>
+	<meta charset="utf-8" />
+	<title>angular components</title>
+	<script src="bower_components/angular/angular.min.js"></script>
+	<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bundle.js"></script>
+	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="styles/dream.css">
+	<link rel="stylesheet" type="text/css" href="styles/index.css">
+</head>
+<body>
+	<div class="container">
+		<aside>
+			<ul>
+				<!-- <li><a ui-sref="dream">首页</a></li>
+				<li><a ui-sref="collapseDemo">collapse</a></li>
+				<li><a ui-sref="tabsDemo">tabs</a></li>
+				<li><a ui-sref="expanderDemo">expand</a></li> -->
+				<li><a ui-sref="sliderDemo">slider</a></li>
+			</ul>
+		</aside>
+		<div class="main">
+			<ui-view></ui-view>
+		</div>
+	</div>
+</body>
+</html>
